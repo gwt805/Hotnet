@@ -1,0 +1,39 @@
+html,
+body {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+}
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(124, 124, 151, 0.4);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(86, 98, 105);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(86, 98, 105);
+}
+
+/*定义两端按钮的样式*/
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*定义右下角汇合处的样式*/
+::-webkit-scrollbar-corner {
+  display: none;
+}
