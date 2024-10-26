@@ -83,16 +83,11 @@ onUnmounted(()=> {
     clearInterval(cron_get_date.value)
 })
 const get_data = async () => {
-  return await http.get("https://api.oioweb.cn/api/common/HotList")
+  return await http.get("https://api.vvhan.com/api/hotlist/all")
 }
 
 get_data().then((res: any) => {
-  for (const key in res.data.result) {
-    let tmp_dict: any = {}
-    tmp_dict['name'] = key
-    tmp_dict['data'] = res.data.result[key]
-    card_data.value.push(tmp_dict)
-  }
+  card_data.value = res.data.data;
 })
 
 </script>
