@@ -27,7 +27,7 @@
             <div class="inner">
               <ul class="hot-list-article">
                 <!-- <img src="/hot.png" v-if="subItem.hot !=''"> <span>{{ subItem.hot }}</span> -->
-                <li v-for="subItem in v.data" :key="subItem.index"> <a :href="subItem.href" target="_blank">{{ subItem.title }}</a></li>
+                <li v-for="subItem in v.data" :key="subItem.index"> <a :href="subItem.url" target="_blank">{{ subItem.title }}</a></li>
               </ul>
             </div>
           </el-card>
